@@ -818,16 +818,21 @@ footer .icon-link {
 	font-size: 0.75rem;
 }
 
-.algorithm-body > li.indent {
-	padding-left: 1.5rem;
+.algorithm-body .algo-line {
+	display: inline-block;
+	max-width: 100%;
 }
 
-.algorithm-body > li.indent2 {
-	padding-left: 3rem;
+.algorithm-body .algo-line.indent {
+	margin-left: 1.5rem;
 }
 
-.algorithm-body > li.indent3 {
-	padding-left: 4.5rem;
+.algorithm-body .algo-line.indent2 {
+	margin-left: 3rem;
+}
+
+.algorithm-body .algo-line.indent3 {
+	margin-left: 4.5rem;
 }
 
 .algorithm .kw {
