@@ -6,8 +6,8 @@ Project homepage for **NARU: A Benchmark for NARrative Evolution and Cultural Nu
 
 Static site files live in [`docs/`](docs/) for GitHub Pages (`main` / `/docs`).
 
-- Org page: https://ma-labo.github.io/naru_page/
-- Repository: https://github.com/ma-labo/naru_page
+- Org page: https://ma-labo.github.io/naru/
+- Repository: https://github.com/ma-labo/naru
 
 ## Layout
 
