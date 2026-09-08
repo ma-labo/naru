@@ -16,16 +16,16 @@ masthead:
     - name: Aza Kai
       sup: "4"
     - name: Vincent Markert
-      sup: 1,4
-    - name: Edison Marrese-Taylor
       sup: "4"
+    - name: Edison Marrese-Taylor
+      sup: "1,4"
     - name: Jianjun Zhao
       sup: "2"
     - name: Lei Ma
       sup: 1,5
   author_comment: '* Contributed equally to this work'
   affiliations:
-    - University of Tokyo
+    - The University of Tokyo
     - Kyushu University
     - Macau University of Science and Technology
     - Infinimind Japan Inc.
