@@ -41,19 +41,22 @@
   } else { data.models }
 
   let rows = models.map(r => {
-    let n-avg = r.narrative.sum() / r.narrative.len()
-    let c-avg = r.cultural.sum() / r.cultural.len()
+    let n-avg = r.at("n_avg", default: r.narrative.sum() / r.narrative.len())
+    let c-avg = r.at("c_avg", default: r.cultural.sum() / r.cultural.len())
     (
       r
         + (
           n-avg: n-avg,
           c-avg: c-avg,
-          overall: if avgs { (n-avg + c-avg) / 2 } else {
-            (
-              (r.narrative.sum() + r.cultural.sum())
-                / (r.narrative.len() + r.cultural.len())
-            )
-          },
+          overall: r.at(
+            "overall",
+            default: if avgs { (n-avg + c-avg) / 2 } else {
+              (
+                (r.narrative.sum() + r.cultural.sum())
+                  / (r.narrative.len() + r.cultural.len())
+              )
+            },
+          ),
         )
     )
   })

@@ -12,7 +12,10 @@
       "sampling": "—",
       "percent": true,
       "narrative": [86.2, 94.0, 88.5, 78.7],
-      "cultural": [65.5, 67.8, 63.9, 78.6, 71.0]
+      "cultural": [65.5, 67.8, 63.9, 78.6, 71.0],
+      "n_avg": 86.8,
+      "c_avg": 69.4,
+      "overall": 78.2
     },
     {
       "name": "Gemini-3-Flash",
