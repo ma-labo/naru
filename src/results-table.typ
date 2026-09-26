@@ -20,14 +20,22 @@
     data.models.map(r => (
       r
         + (
-          narrative: r
-            .narrative
-            .enumerate()
-            .map(((i, n)) => n / data.totals.narrative.at(i) * 100),
-          cultural: r
-            .cultural
-            .enumerate()
-            .map(((i, n)) => n / data.totals.cultural.at(i) * 100),
+          narrative: if r.at("percent", default: false) {
+            r.narrative
+          } else {
+            r
+              .narrative
+              .enumerate()
+              .map(((i, n)) => n / data.totals.narrative.at(i) * 100)
+          },
+          cultural: if r.at("percent", default: false) {
+            r.cultural
+          } else {
+            r
+              .cultural
+              .enumerate()
+              .map(((i, n)) => n / data.totals.cultural.at(i) * 100)
+          },
         )
     ))
   } else { data.models }

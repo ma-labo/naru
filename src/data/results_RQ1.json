@@ -1,10 +1,19 @@
 {
-  "_comment": "RQ1 — main results (MCQ). Values are raw correct-answer counts; totals holds each sub-task's question count (N). Accuracies, macro-averages, and overall are derived at build time.",
+  "_comment": "RQ1 — main results (MCQ). Values are raw correct-answer counts unless percent is true, in which case they are published accuracies. totals holds each sub-task's question count (N). Accuracies, macro-averages, and overall are derived at build time.",
   "totals": {
     "narrative": [185, 187, 186, 187],
     "cultural": [143, 147, 148, 149, 149]
   },
   "models": [
+    {
+      "name": "DeepFrame Platform",
+      "href": "https://infinimind.io/en/services/deepframe",
+      "from": "Infinimind",
+      "sampling": "—",
+      "percent": true,
+      "narrative": [86.2, 94.0, 88.5, 78.7],
+      "cultural": [65.5, 67.8, 63.9, 78.6, 71.0]
+    },
     {
       "name": "Gemini-3-Flash",
       "href": "https://deepmind.google/models/gemini/flash/",
@@ -44,6 +53,38 @@
       "sampling": "0.25 FPS",
       "narrative": [66, 87, 74, 67],
       "cultural": [46, 59, 49, 58, 49]
+    },
+    {
+      "name": "Nemotron-3-Nano-Omni-30B-A3B-Reasoning (NVFP4)",
+      "href": "https://huggingface.co/nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+      "from": "NVIDIA",
+      "sampling": "2048 Frames",
+      "narrative": [57, 89, 55, 67],
+      "cultural": [46, 75, 48, 45, 49]
+    },
+    {
+      "name": "DeepFrame-Model-8B",
+      "href": "https://infinimind.io/en/services/deepframe",
+      "from": "Infinimind",
+      "sampling": "2048 Frames",
+      "narrative": [63, 79, 63, 69],
+      "cultural": [45, 56, 49, 49, 51]
+    },
+    {
+      "name": "Nemotron-3-Nano-Omni-30B-A3B-Reasoning",
+      "href": "https://huggingface.co/nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16",
+      "from": "NVIDIA",
+      "sampling": "128 Frames",
+      "narrative": [51, 79, 56, 67],
+      "cultural": [49, 71, 50, 46, 50]
+    },
+    {
+      "name": "DeepFrame-Model-8B",
+      "href": "https://infinimind.io/en/services/deepframe",
+      "from": "Infinimind",
+      "sampling": "128 Frames",
+      "narrative": [58, 76, 60, 67],
+      "cultural": [44, 56, 53, 48, 55]
     },
     {
       "name": "Qwen2.5-VL-7B",

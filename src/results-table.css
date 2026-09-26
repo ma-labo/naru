@@ -37,6 +37,8 @@
 .results th.model,
 .results td.model {
 	text-align: left;
+	max-width: 18rem;
+	overflow-wrap: anywhere;
 }
 
 .results .from {
